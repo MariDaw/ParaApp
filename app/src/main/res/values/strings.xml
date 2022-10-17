@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">NextGenPv</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Vesc Tool</string>
+    <string name="nav_header_subtitle">vesc.tool@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_temperature"></string>
+    <string name="title_humidity"></string>
+    <string name="title_velocity">Velocidad</string>
+    <string name="subtitle_temperature"></string>
+    <string name="all">TODO</string>
+    <string name="value_temperature">Temperatura: 30ºC</string>
+    <string name="value_humidity">Humedad: 20%</string>
+    <string name="value_velocity"><b>Velocidad:</b> 40km/hora</string>
+    <string name="humidity">75 %</string>
+    <string name="title_main">DHT11 ESP8266</string>
+    <string name="sub_title_main">Firebase Java</string>
+
+    <string name="menu_home">HOME</string>
+    <string name="menu_gallery">RT DATAS</string>
+    <string name="menu_slideshow">CONTACT</string>
+
+
+    <string name="texto_main">Nube Colectiva</string>
+    <string name="texto_ec">Enviar Correo</string>
+    <string name="texto_correo">Enviar a:</string>
+    <string name="texto_asunto">Asunto:</string>
+    <string name="texto_mensaje">Mensaje:</string>
+    <string name="texto_btn_enviar">Enviar</string>
+</resources>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "809333034679",
+    "firebase_url": "https://nextgenpv-16398-default-rtdb.firebaseio.com",
+    "project_id": "nextgenpv-16398",
+    "storage_bucket": "nextgenpv-16398.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809333034679:android:fe3239e5f53d7e8d384732",
+        "android_client_info": {
+          "package_name": "com.example.nextgenpv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "809333034679-6qp4pnmg5mvd3q44l5620sovsr8a9le9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOCO2IqeYcvDObqOnVuE9E17JOmBFoXqM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "809333034679-6qp4pnmg5mvd3q44l5620sovsr8a9le9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
