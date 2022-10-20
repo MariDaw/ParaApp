@@ -67,6 +67,52 @@ public class GalleryFragment extends Fragment {
             }
         });
 
+        DatabaseReference myPotencia = database.getReference("prueba");
+
+        final TextView mPotenTextView = root.findViewById(R.id.potenTextView);
+        final ProgressBar mPotenProgressBar = root.findViewById(R.id.potenProgressBar);
+
+        // Read from the database
+        myPotencia.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                String value = dataSnapshot.getValue().toString();
+                mPotenTextView.setText(value+" V");
+
+                assert value != null;
+                mPotenProgressBar.setProgress(Integer.parseInt(value));
+            }
+
+            @Override
+            public void onCancelled(DatabaseError error) {
+                // Failed to read value
+                Log.w("TAG", "Failed to read value.", error.toException());
+            }
+        });
+
+        DatabaseReference myMotor = database.getReference("motor");
+
+        final TextView mMotorTextView = root.findViewById(R.id.motorTextView);
+        final ProgressBar mMotorProgressBar = root.findViewById(R.id.motorProgressBar);
+
+        // Read from the database
+        myMotor.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                String value = dataSnapshot.getValue().toString();
+                mMotorTextView.setText(value+" M");
+
+                assert value != null;
+                mMotorProgressBar.setProgress(Integer.parseInt(value));
+            }
+
+            @Override
+            public void onCancelled(DatabaseError error) {
+                // Failed to read value
+                Log.w("TAG", "Failed to read value.", error.toException());
+            }
+        });
+
 
         DatabaseReference tempRef = database.getReference("temperature");
         final TextView mTemperatureTextView = root.findViewById(R.id.temperatureTextView);

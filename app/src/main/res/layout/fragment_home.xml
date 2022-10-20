@@ -31,7 +31,7 @@
         android:layout_marginEnd="8dp"
         android:text="VESC"
         android:textAlignment="center"
-        android:textColor="#000000"
+        android:textColor="#FF4C4949"
         android:textSize="96sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

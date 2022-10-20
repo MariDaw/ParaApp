@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#D3FFFFFF"
     android:layout_height="match_parent">
 
     <LinearLayout
@@ -24,33 +25,28 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/bottomLinearLayout"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/topLinearLayout"
         tools:ignore="UnknownIdInLayout">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_marginTop="0dp"
-            android:layout_height="390dp"
-            >
-
+            android:layout_height="490dp"
+            android:layout_marginBottom="0dp">
 
             <ProgressBar
                 android:id="@+id/revolProgressBar"
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="390dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginBottom="152dp"
                 android:background="@drawable/ic_circular_background"
                 android:contentDescription="@string/all"
                 android:max="120"
                 android:progressDrawable="@drawable/ic_circular_progress"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="1.0" />
+                app:layout_constraintEnd_toEndOf="parent" />
 
             <ImageView
                 android:id="@+id/imageView"
@@ -59,9 +55,10 @@
                 android:contentDescription="@string/all"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.723"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.504"
+                app:layout_constraintVertical_bias="0.124"
                 app:srcCompat="@drawable/ic_dasharray"
                 tools:ignore="ImageContrastCheck" />
 
@@ -74,7 +71,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.501"
+                app:layout_constraintVertical_bias="0.246"
                 app:srcCompat="@drawable/speed"
                 tools:ignore="ImageContrastCheck" />
 
@@ -82,80 +79,172 @@
                 android:id="@+id/revolTextView"
                 android:layout_width="361dp"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
+                android:fontFamily="sans-serif-condensed-light"
+                android:gravity="center"
+                android:text="@string/humidity"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.68"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.632" />
+
+            <ProgressBar
+                android:id="@+id/potenProgressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginEnd="190dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/ic_circular_backgroundpoten"
+                android:contentDescription="@string/all"
+                android:max="120"
+                android:progressDrawable="@drawable/ic_circular_progresspoten"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageViewPoten"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="308dp"
+                android:contentDescription="@string/all"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_dasharraypoten"
+                tools:ignore="ImageContrastCheck" />
+
+
+            <TextView
+                android:id="@+id/potenTextView"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-light"
                 android:gravity="center"
                 android:text="@string/humidity"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.12"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="1.0" />
+                app:layout_constraintVertical_bias="0.787" />
+
+            <ProgressBar
+                android:id="@+id/motorProgressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/ic_circular_backgroundpoten"
+                android:contentDescription="@string/all"
+                android:max="120"
+                android:progressDrawable="@drawable/ic_circular_progresspoten"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageViewMotor"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="225dp"
+                android:layout_marginTop="307dp"
+                android:contentDescription="@string/all"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_dasharraypoten"
+                tools:ignore="ImageContrastCheck" />
+
+
+            <TextView
+                android:id="@+id/motorTextView"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-light"
+                android:gravity="center"
+
+                android:text="@string/humidity"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.923"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.787" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
 
         <TableLayout
             android:id="@+id/simpleTableLayout"
             android:layout_width="350dp"
-            android:layout_gravity="center"
             android:layout_height="match_parent"
-            android:layout_marginTop="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
             android:stretchColumns="*">
 
-        <TableRow
-            android:id="@+id/firstRow"
-            android:layout_width="fill_parent"
-            android:layout_height="match_parent" >
+            <TableRow
+                android:id="@+id/firstRow"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/temperatureTextView"
-                android:layout_width="15dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="3dp"
+                <TextView
+                    android:id="@+id/temperatureTextView"
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
 
-                android:alpha="1"
-                android:background="@color/teal_700"
-                android:gravity="center"
-                android:padding="18dip"
-                android:radius="10dp"
-                android:text="20ºC "
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="18dp" />
+                    android:alpha="1"
+                    android:background="@drawable/bordes"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:padding="18dip"
 
-            <TextView
+                    android:radius="10dp"
+                    android:text="20ºC "
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
 
-                android:id="@+id/humidityTextView"
-                android:layout_width="15dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="3dp"
+                <TextView
 
-                android:background="@color/teal_700"
+                    android:id="@+id/humidityTextView"
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/bordes"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:padding="18dip"
+                    android:text="36%"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
 
-                android:padding="18dip"
-                android:gravity="center"
-                android:text="36%"
-                android:textColor="@color/white"
-                android:textSize="18dp" />
+                <TextView
 
-            <TextView
+                    android:id="@+id/velocityTextView"
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/bordes"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:padding="18dip"
+                    android:text="0 rpm"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+            </TableRow>
 
-                android:id="@+id/velocityTextView"
-                android:layout_width="15dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="3dp"
-                android:background="@color/teal_700"
-                android:padding="18dip"
-                android:gravity="center"
-                android:text="0 rpm"
-                android:textColor="@color/white"
-                android:textSize="18dp" />
-        </TableRow>
             <TableRow
                 android:id="@+id/secondRow"
                 android:layout_width="fill_parent"
-                android:layout_height="match_parent" >
+                android:layout_height="match_parent">
 
                 <TextView
                     android:id="@+id/textView1Row2"
@@ -163,13 +252,13 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="0dp"
                     android:background="@color/white"
+                    android:fontFamily="sans-serif-condensed"
                     android:gravity="center"
                     android:padding="10dip"
-                    android:text="TEMPERATURA"
 
+                    android:text="TEMPERATURA"
                     android:textColor="@color/black"
-                    android:textSize="12dp"
-                    android:textStyle="bold" />
+                    android:textSize="14sp" />
 
                 <TextView
 
@@ -178,12 +267,12 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="0dp"
                     android:background="@color/white"
+                    android:fontFamily="sans-serif-condensed"
                     android:gravity="center"
                     android:padding="10dip"
                     android:text="HUMEDAD"
                     android:textColor="@color/black"
-                    android:textSize="12dp"
-                    android:textStyle="bold" />
+                    android:textSize="14sp" />
 
                 <TextView
 
@@ -192,12 +281,12 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="0dp"
                     android:background="@color/white"
+                    android:fontFamily="sans-serif-condensed"
                     android:gravity="center"
                     android:padding="10dip"
                     android:text="VELOCIDAD"
                     android:textColor="@color/black"
-                    android:textSize="12dp"
-                    android:textStyle="bold" />
+                    android:textSize="14sp" />
             </TableRow>
         </TableLayout>
 
@@ -207,7 +296,7 @@
             android:layout_height="32dp"
             android:layout_gravity="center"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
             android:background="@drawable/ic_toggle_theme"
             android:text=""
